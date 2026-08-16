@@ -1,0 +1,12 @@
+{
+  "name": "dpx",
+  "description": "Cross-border stablecoin settlement, AML/compliance screening, ESG scoring, and macro intelligence for AI agents — powered by DPX Protocol.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Untitled_ LuxPerpetua Technologies, Inc.",
+    "email": "case@untitledfinancial.com"
+  },
+  "homepage": "https://docs.untitledfinancial.com/integrations/mcp",
+  "repository": "https://github.com/untitledfinancial/dpx-claude-plugin",
+  "license": "MIT"
+}

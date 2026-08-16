@@ -1,0 +1,17 @@
+{
+  "name": "dpx-tools",
+  "metadata": {
+    "description": "DPX — compliance-grade stablecoin settlement rail for AI agents. Settlement, AML/compliance, ESG, and macro intelligence tools."
+  },
+  "owner": {
+    "name": "Untitled_ LuxPerpetua Technologies, Inc.",
+    "email": "case@untitledfinancial.com"
+  },
+  "plugins": [
+    {
+      "name": "dpx",
+      "source": "./",
+      "description": "Cross-border stablecoin settlement, AML/compliance screening, ESG scoring, and macro intelligence for AI agents — powered by DPX Protocol."
+    }
+  ]
+}
