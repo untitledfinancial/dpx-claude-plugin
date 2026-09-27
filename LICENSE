@@ -1,0 +1,76 @@
+Business Source License 1.1
+
+Licensor:             Untitled_ LuxPerpetua Technologies, Inc.
+Licensed Work:        DPX for Claude Code (dpx, dpx-intelligence plugins)
+                      Copyright © 2026 Untitled_ LuxPerpetua Technologies, Inc.
+                      All rights reserved.
+Additional Use Grant: You may install and make production use of the
+                      Licensed Work — including having it call the live
+                      DPX API on your behalf, for real settlements and
+                      real intelligence queries — without purchasing a
+                      separate commercial license. Paid DPX API usage
+                      reached through the Licensed Work is billed
+                      through DPX's own subscription/x402 mechanisms,
+                      not through this License. This grant does not
+                      extend to redistributing, rebranding, sublicensing,
+                      or offering the Licensed Work itself (or a
+                      derivative of it) as a competing product or
+                      service.
+Change Date:          The earlier of 2030-03-16 or a date specified at
+                      https://untitledfinancial.com/license
+Change License:       Apache License, Version 2.0
+
+For information about alternative licensing arrangements, contact:
+legal@untitledfinancial.com
+
+---
+
+Parameters
+
+Licensor:             Untitled_ LuxPerpetua Technologies, Inc.
+Licensed Work:        DPX for Claude Code — the `dpx` and `dpx-intelligence`
+                      Claude Code plugins, their manifests, skills, and
+                      marketplace listing, distributed from this repository.
+Additional Use Grant: Production use of the Licensed Work is permitted
+                      without a separate commercial license. Redistribution,
+                      rebranding, sublicensing, or use of the Licensed Work
+                      (or a derivative of it) as a competing product or
+                      service is not covered by this grant.
+Change Date:          The earlier of 2030-03-16 or a date specified at
+                      https://untitledfinancial.com/license
+Change License:       Apache License, Version 2.0
+
+---
+
+Terms
+
+The Licensor hereby grants you the right to copy, modify, create derivative
+works, redistribute, and make non-production use of the Licensed Work.
+
+The Licensor may make an Additional Use Grant, above, permitting limited
+production use.
+
+Effective on the Change Date, or the fourth anniversary of the first publicly
+available distribution of a specific version of the Licensed Work under this
+License, whichever comes first, the Licensor hereby grants you rights under
+the terms of the Change License, and these terms do not apply further to that
+version of the Licensed Work.
+
+License Grant. Subject to the terms and conditions of this License, the
+Licensor hereby grants you a worldwide, non-exclusive, non-sublicensable
+right to copy, modify, create derivative works of, redistribute, and make
+production use of the Licensed Work and such derivative works for the
+term of this License, as narrowed or expanded by the Additional Use Grant
+above. If your use of the Licensed Work does not comply with the
+requirements currently in effect as described in this License, you must
+purchase a commercial license from the Licensor or its authorized resellers,
+or you must refrain from using the Licensed Work.
+
+Trademarks. This License does not grant you any right in the trademarks,
+service marks, brand names or logos of the Licensor, including DPX,
+DovePaxBranch, Untitled_, and Untitled_ LuxPerpetua Technologies.
+
+DISCLAIMER. THE LICENSED WORK IS PROVIDED "AS IS". THE LICENSOR HEREBY
+DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING
+(WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, NON-INFRINGEMENT, AND TITLE.

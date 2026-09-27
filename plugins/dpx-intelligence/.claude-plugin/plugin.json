@@ -8,7 +8,7 @@
   },
   "homepage": "https://docs.untitledfinancial.com/integrations/mcp",
   "repository": "https://github.com/untitledfinancial/dpx-claude-plugin",
-  "license": "MIT",
+  "license": "BUSL-1.1",
   "mcpServers": {
     "dpx": {
       "type": "http",

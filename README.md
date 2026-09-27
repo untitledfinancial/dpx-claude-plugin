@@ -32,4 +32,4 @@ Most tools (oracle status, FX rates, fee schedules, compliance checks) work with
 
 ## License
 
-MIT
+[Business Source License 1.1](./LICENSE) — proprietary, not open-source. Production use of the plugin itself (installing it, having Claude call DPX's API through it) is explicitly permitted at no extra cost beyond DPX's own subscription/x402 pricing for paid tools — no separate commercial license needed for that. What the license does not permit: redistributing, rebranding, sublicensing, or turning this plugin (or a derivative of it) into a competing product or service. See the LICENSE file for the exact terms, or contact legal@untitledfinancial.com for alternative arrangements.
