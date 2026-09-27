@@ -1,0 +1,18 @@
+{
+  "name": "dpx-intelligence",
+  "description": "Live institutional-grade intelligence for AI agents — macro, climate, commodity, systemic risk, FX corridors, and geopolitical signals, from DPX's oracle stack. Useful standalone for research, not only ahead of a settlement.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Untitled_ LuxPerpetua Technologies, Inc.",
+    "email": "case@untitledfinancial.com"
+  },
+  "homepage": "https://docs.untitledfinancial.com/integrations/mcp",
+  "repository": "https://github.com/untitledfinancial/dpx-claude-plugin",
+  "license": "MIT",
+  "mcpServers": {
+    "dpx": {
+      "type": "http",
+      "url": "https://mcp.untitledfinancial.com/mcp"
+    }
+  }
+}
