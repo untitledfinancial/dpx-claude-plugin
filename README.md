@@ -17,6 +17,7 @@ This plugin connects Claude to the live [DPX](https://untitledfinancial.com) MCP
 - **`dpx-settlement`** — the settlement flow: oracle check → quote → compliance screen → execute, plus shortcuts (`flow_check`, `settlement.nl`, `batch_settle`)
 - **`dpx-compliance`** — AML/sanctions/UBO/PEP screening and ESG scoring, in the right order relative to settlement
 - **`dpx-fx-routing`** — stablecoin routing and FX corridor intelligence
+- **`dpx-intelligence`** — macro, climate, commodity, systemic risk, and geopolitical intelligence tools; what to call for any forward-looking signal question, with free vs. paid guidance
 
 ## Free vs. paid tools
 
