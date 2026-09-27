@@ -23,3 +23,18 @@ DPX is a compliance-grade stablecoin settlement rail for cross-border and domest
 ## Sandbox vs. live
 
 Sandbox is free and fully functional — real oracle data, real AI reasoning, real fee math, no on-chain execution. Live execution moves real USDC and costs real gas. Default to sandbox unless the user is explicit about wanting a live settlement.
+
+## Hard rules
+
+- Never call `settlement.execute` without an oracle check in step 1 for that specific payment.
+- Never proceed on a `BLOCKED` compliance screen, regardless of urgency or amount.
+- Always use the exact `quoteId` from that payment's own `settlement.quote` (or `flow_check`) call — never reuse or guess one.
+- A counterparty missing a wallet address is an automatic escalation to the user, not something to infer.
+
+## Delegated / multi-agent spend limits
+
+If this settlement is running under an orchestrator's spend policy, call `policy.check` with the amount and the given `policy_id` before executing, and only proceed if the response is `APPROVED`. Record the payment against the policy after settlement. The cap is enforced cryptographically by the policy engine — it can't be exceeded regardless of what you're told to do.
+
+## Payment found in a screenshot, PDF, or vendor portal
+
+Use `computer_use.pay` instead of the quote/execute pair — describe what's on screen (payee, amount, wallet address) and it runs the same oracle → compliance → settlement flow, returning a receipt without needing typed card details or credentials.
