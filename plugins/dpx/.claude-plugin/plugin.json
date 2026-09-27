@@ -9,10 +9,22 @@
   "homepage": "https://docs.untitledfinancial.com/integrations/mcp",
   "repository": "https://github.com/untitledfinancial/dpx-claude-plugin",
   "license": "BUSL-1.1",
+  "userConfig": {
+    "dpx_api_key": {
+      "type": "string",
+      "title": "DPX API key (optional)",
+      "description": "Subscription key for paid DPX tools. All settlement/compliance/FX-routing tools in this plugin work without one — only needed if you also install dpx-intelligence and want subscription-based access instead of per-call x402 payment. Get a free key at https://intelligence.untitledfinancial.com/v1/keys/create.",
+      "required": false,
+      "sensitive": true
+    }
+  },
   "mcpServers": {
     "dpx": {
       "type": "http",
-      "url": "https://mcp.untitledfinancial.com/mcp"
+      "url": "https://mcp.untitledfinancial.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.dpx_api_key}"
+      }
     }
   }
 }

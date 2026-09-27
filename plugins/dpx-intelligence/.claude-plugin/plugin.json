@@ -9,10 +9,22 @@
   "homepage": "https://docs.untitledfinancial.com/integrations/mcp",
   "repository": "https://github.com/untitledfinancial/dpx-claude-plugin",
   "license": "BUSL-1.1",
+  "userConfig": {
+    "dpx_api_key": {
+      "type": "string",
+      "title": "DPX API key (optional)",
+      "description": "Subscription key for paid intelligence tools (macro, climate, commodity, systemic risk reports). Free tools work without one. Leave blank to pay per call via x402 instead. Get a free key at https://intelligence.untitledfinancial.com/v1/keys/create, or upgrade straight to a paid tier at https://intelligence.untitledfinancial.com/v1/keys/upgrade?apiKey=<key>&tier=basic|pro.",
+      "required": false,
+      "sensitive": true
+    }
+  },
   "mcpServers": {
     "dpx": {
       "type": "http",
-      "url": "https://mcp.untitledfinancial.com/mcp"
+      "url": "https://mcp.untitledfinancial.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.dpx_api_key}"
+      }
     }
   }
 }

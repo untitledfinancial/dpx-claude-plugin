@@ -6,7 +6,7 @@ description: Use when the user asks about macro conditions, FX risk, commodity m
 
 DPX provides live institutional-grade intelligence across macro, climate, commodity, systemic risk, and geopolitical domains. These tools are useful on their own — not only as part of a settlement flow.
 
-**Access:** most tools require an API key (`X-API-Key: dpx_sub_pk_...`) or a per-call x402 USDC payment on Base. Call `intelligence.subscribe` to see subscription tiers, or ask the user if they have a key before calling a paid tool. Free tools are marked below.
+**Access:** most tools require an API key (`X-API-Key: dpx_sub_pk_...`) or a per-call x402 USDC payment on Base. To get a key: `POST https://intelligence.untitledfinancial.com/v1/keys/create` issues a free key instantly (just an email, no payment); `GET https://intelligence.untitledfinancial.com/v1/keys/upgrade?apiKey=<key>&tier=basic|pro` starts a Stripe Checkout session for BASIC/PRO. (Note: `intelligence.subscribe`, despite the name, is a webhook-alert registration tool, not this — don't confuse the two.) Ask the user if they have a key before calling a paid tool. Free tools are marked below.
 
 ---
 
@@ -64,7 +64,7 @@ DPX provides live institutional-grade intelligence across macro, climate, commod
 
 ## Paid tools — API key or x402
 
-All paid tools accept either a subscription key (`X-API-Key: dpx_sub_pk_...` header) or a per-call x402 USDC payment. If the user doesn't have a key, tell them they can get one at `https://agent.untitledfinancial.com/pay` — or suggest the sandbox via `oracle.stability` first to demonstrate value before they subscribe.
+All paid tools accept either a subscription key (`X-API-Key: dpx_sub_pk_...` header) or a per-call x402 USDC payment. If the user doesn't have a key, tell them to `POST https://intelligence.untitledfinancial.com/v1/keys/create` for an instant free key, or `GET https://intelligence.untitledfinancial.com/v1/keys/upgrade?apiKey=<key>&tier=basic|pro` to go straight to a paid tier via Stripe Checkout — or suggest the sandbox via `oracle.stability` first to demonstrate value before they subscribe.
 
 **Macro & systemic:**
 - `oracle.status` — full 11-layer oracle output with AI briefing
@@ -136,4 +136,4 @@ All paid tools accept either a subscription key (`X-API-Key: dpx_sub_pk_...` hea
 
 ## If the user doesn't have an API key
 
-Suggest the free tools first (`oracle.stability`, `oracle.status`, `fx.rate`) to demonstrate value. For paid tools, point them to: `GET https://agent.untitledfinancial.com/pay` — which returns subscription tiers and the payment flow. Do not block on this — run the free tools and flag the paid ones as requiring a key.
+Suggest the free tools first (`oracle.stability`, `oracle.status`, `fx.rate`) to demonstrate value. For paid tools, point them to: `POST https://intelligence.untitledfinancial.com/v1/keys/create` (instant free key) or `GET https://intelligence.untitledfinancial.com/v1/keys/upgrade?apiKey=<key>&tier=basic|pro` (Stripe Checkout, straight to BASIC/PRO). Do not block on this — run the free tools and flag the paid ones as requiring a key.
